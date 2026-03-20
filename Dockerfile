@@ -12,7 +12,7 @@ RUN apt-get update \
     zip \
   && rm -rf /var/lib/apt/lists/*
 
-RUN npm install -g openclaw@2026.3.13 clawhub@latest && openclaw skills install Martian-Engineering/lossless-claw
+RUN npm install -g openclaw@2026.3.13 clawhub@latest lossless-claw
 
 WORKDIR /app
 
